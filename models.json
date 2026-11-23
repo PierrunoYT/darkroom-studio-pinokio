@@ -53,7 +53,7 @@
     "id": "sd35-large-turbo",
     "title": "SD 3.5 Large Turbo",
     "size": "28 GB",
-    "note": "Gated: accept the license at huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo ; Darkroom asks for a Hugging Face token.",
+    "note": "Gated: accept the license at huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo; Darkroom asks for a Hugging Face token.",
     "files": [
       {
         "folder": "checkpoints",
@@ -125,7 +125,7 @@
     "id": "flux3-klein",
     "title": "FLUX 3 Image Klein",
     "size": "39 GB",
-    "note": "Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy ; Darkroom asks for a Hugging Face token.",
+    "note": "Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy; Darkroom asks for a Hugging Face token.",
     "files": [
       {
         "folder": "diffusion_models",
@@ -153,7 +153,7 @@
     "id": "flux3-klein-base",
     "title": "FLUX 3 Image Klein Base",
     "size": "39 GB",
-    "note": "Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy ; Darkroom asks for a Hugging Face token.",
+    "note": "Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy; Darkroom asks for a Hugging Face token.",
     "files": [
       {
         "folder": "diffusion_models",
@@ -294,7 +294,7 @@
     "id": "ideogram4",
     "title": "Ideogram 4",
     "size": "49 GB",
-    "note": "Ideogram non-commercial license. Its VAE is FLUX 3's: Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy ; Darkroom asks for a Hugging Face token.",
+    "note": "Ideogram non-commercial license. Its VAE is FLUX 3's: Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy; Darkroom asks for a Hugging Face token.",
     "files": [
       {
         "folder": "diffusion_models",
@@ -440,7 +440,7 @@
     "id": "fibo2",
     "title": "Fibo 2.0 (Dev + Edit Turbo)",
     "size": "37 GB",
-    "note": "CC BY-NC 4.0: non-commercial only. Its VAE is FLUX 3's: Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy ; Darkroom asks for a Hugging Face token.",
+    "note": "CC BY-NC 4.0: non-commercial only. Its VAE is FLUX 3's: Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy; Darkroom asks for a Hugging Face token.",
     "files": [
       {
         "folder": "diffusion_models",
