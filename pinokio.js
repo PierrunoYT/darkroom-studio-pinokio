@@ -2,10 +2,16 @@ const path = require("path")
 const models = require("./models.json")
 
 // One entry per model group; a check mark when every file of the group is already in comfyui/models.
+// The first entry saves a Hugging Face token for gated repos (download.js also asks when one is needed).
 const downloadMenu = (info) => ({
   icon: "fa-solid fa-download",
   text: "Download Models",
-  menu: models.map((m) => {
+  menu: [{
+    icon: "fa-solid fa-key",
+    text: "<div><strong>Hugging Face token</strong><div>Set or replace the token used for gated models</div></div>",
+    href: "token.js",
+    mode: "refresh"
+  }].concat(models.map((m) => {
     let have = m.files.every((f) => info.exists(`comfyui/models/${f.folder}/${f.name || path.basename(f.file)}`))
     return {
       icon: have ? "fa-solid fa-check" : "fa-solid fa-download",
@@ -14,7 +20,7 @@ const downloadMenu = (info) => ({
       params: { model: m.id },
       mode: "refresh"
     }
-  })
+  }))
 })
 
 module.exports = {

@@ -21,7 +21,10 @@ image generation studio: a dark Gradio UI on top of a [ComfyUI](https://github.c
    models get a check mark. Downloading works while Darkroom runs: afterwards click **Connect / refresh models**.
 
    FLUX 3 Klein, SD 3.5 Large Turbo, and Ideogram 4 and Fibo 2.0 (which use FLUX 3's VAE) come from gated repos:
-   accept the license on Hugging Face, then run `hf auth login` in a Pinokio terminal (or set `HF_TOKEN`) first.
+   accept the license on Hugging Face. When a download needs a token, a dialog asks for one (create a Read token at
+   https://huggingface.co/settings/tokens), saves it as your Hugging Face login and retries. **Download Models →
+   Hugging Face token** sets or replaces it up front. The token is passed as an environment variable, not on the
+   command line, so it doesn't show in the terminal.
    Some models are non-commercial or region-restricted; the menu shows the license note.
 
    The list lives in `models.json` (ComfyUI folder, Hugging Face repo, file, optional local name);
