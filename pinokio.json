@@ -1,0 +1,4 @@
+{
+  "title": "Darkroom",
+  "description": "Local image generation studio: a dark Gradio UI on top of a bundled ComfyUI backend. https://github.com/PierrunoYT/darkroom-studio"
+}

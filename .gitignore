@@ -1,0 +1,21 @@
+# Cloned apps + venvs + models
+app/
+comfyui/
+
+# Pinokio-generated
+logs/
+cache/
+.pinokio-temp/
+ENVIRONMENT
+AGENTS.md
+CLAUDE.md
+GEMINI.md
+QWEN.md
+.geminiignore
+.clinerules
+.cursorrules
+.windsurfrules
+
+# OS
+node_modules
+.DS_Store
