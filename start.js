@@ -34,9 +34,6 @@ module.exports = {
       params: {
         path: "app",
         env: {
-          // Darkroom reads its prompt .txt files with the locale encoding; on Windows that is
-          // cp1252, which can't decode them. UTF-8 mode makes Python default to UTF-8.
-          PYTHONUTF8: "1",
           COMFYUI_URL: "{{local.comfy_url ? local.comfy_url : (envs.COMFYUI_URL || 'http://127.0.0.1:8188')}}",
           DARKROOM_PORT: "{{port}}"
         },
