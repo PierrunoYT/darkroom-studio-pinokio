@@ -1,3 +1,22 @@
+const path = require("path")
+const models = require("./models.json")
+
+// One entry per model group; a check mark when every file of the group is already in comfyui/models.
+const downloadMenu = (info) => ({
+  icon: "fa-solid fa-download",
+  text: "Download Models",
+  menu: models.map((m) => {
+    let have = m.files.every((f) => info.exists(`comfyui/models/${f.folder}/${f.name || path.basename(f.file)}`))
+    return {
+      icon: have ? "fa-solid fa-check" : "fa-solid fa-download",
+      text: `<div><strong>${m.title}</strong><div>${have ? "Downloaded" : m.size}${m.note ? " · " + m.note : ""}</div></div>`,
+      href: "download.js",
+      params: { model: m.id },
+      mode: "refresh"
+    }
+  })
+})
+
 module.exports = {
   version: "7.0",
   title: "Darkroom",
@@ -9,7 +28,13 @@ module.exports = {
       install: info.running("install.js"),
       start: info.running("start.js"),
       update: info.running("update.js"),
-      reset: info.running("reset.js")
+      reset: info.running("reset.js"),
+      download: info.running("download.js")
+    }
+    let downloading = {
+      icon: "fa-solid fa-terminal",
+      text: "Downloading",
+      href: "download.js",
     }
     if (running.install) {
       return [{
@@ -43,7 +68,10 @@ module.exports = {
           text: "Terminal",
           href: "start.js",
         })
+        items.push(running.download ? downloading : downloadMenu(info))
         return items
+      } else if (running.download) {
+        return [{ ...downloading, default: true }]
       } else if (running.update) {
         return [{
           default: true,
@@ -70,7 +98,7 @@ module.exports = {
           text: "<div><strong>Start Darkroom only</strong><div>Use an external or Modal ComfyUI (COMFYUI_URL / Connection tab)</div></div>",
           href: "start.js",
           params: { backend: "external" }
-        }, {
+        }, downloadMenu(info), {
           icon: "fa-solid fa-plug",
           text: "Update",
           href: "update.js",

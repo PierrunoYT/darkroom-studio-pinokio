@@ -1,0 +1,918 @@
+[
+  {
+    "id": "sd15",
+    "title": "SD 1.5",
+    "size": "2 GB",
+    "files": [
+      {
+        "folder": "checkpoints",
+        "repo": "Comfy-Org/stable-diffusion-v1-5-archive",
+        "file": "v1-5-pruned-emaonly-fp16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "sdxl",
+    "title": "SDXL",
+    "size": "7 GB",
+    "files": [
+      {
+        "folder": "checkpoints",
+        "repo": "stabilityai/stable-diffusion-xl-base-1.0",
+        "file": "sd_xl_base_1.0.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "sd35-large",
+    "title": "SD 3.5 Large (fp8)",
+    "size": "15 GB",
+    "note": "Stability AI Community License.",
+    "files": [
+      {
+        "folder": "checkpoints",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "sd3.5_large_fp8_scaled.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "sd35-medium",
+    "title": "SD 3.5 Medium",
+    "size": "12 GB",
+    "note": "Stability AI Community License.",
+    "files": [
+      {
+        "folder": "checkpoints",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "sd3.5_medium_incl_clips_t5xxlfp8scaled.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "sd35-large-turbo",
+    "title": "SD 3.5 Large Turbo",
+    "size": "28 GB",
+    "note": "Gated: accept the license at huggingface.co/stabilityai/stable-diffusion-3.5-large-turbo and log in with `hf auth login`.",
+    "files": [
+      {
+        "folder": "checkpoints",
+        "repo": "stabilityai/stable-diffusion-3.5-large-turbo",
+        "file": "sd3.5_large_turbo.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "text_encoders/clip_g.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "text_encoders/clip_l.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "text_encoders/t5xxl_fp16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "z-image-turbo",
+    "title": "Z-Image Turbo",
+    "size": "21 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/diffusion_models/z_image_turbo_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/text_encoders/qwen_3_4b.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "z-image",
+    "title": "Z-Image (base)",
+    "size": "21 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/z_image",
+        "file": "split_files/diffusion_models/z_image_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/text_encoders/qwen_3_4b.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "flux3-klein",
+    "title": "FLUX 3 Image Klein",
+    "size": "39 GB",
+    "note": "Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy and log in with `hf auth login`.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "diffusion_models/flux3-image-klein-bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "text_encoders/qwen3vl_4b_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "text_encoders/qwen3.5_9b_flux3_prompt_upsampler_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "vae/flux2-vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "flux3-klein-base",
+    "title": "FLUX 3 Image Klein Base",
+    "size": "39 GB",
+    "note": "Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy and log in with `hf auth login`.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "diffusion_models/flux3-image-klein-base-bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "text_encoders/qwen3vl_4b_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "text_encoders/qwen3.5_9b_flux3_prompt_upsampler_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "vae/flux2-vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "qwen-image",
+    "title": "Qwen-Image 2.1",
+    "size": "32 GB",
+    "note": "Qwen Research License: non-commercial only.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "diffusion_models/qwen_image_2.1_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "text_encoders/qwen3vl_8b_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "vae/qwen_image_2.1_vae_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "qwen-image-turbo",
+    "title": "Qwen-Image 2.1 Turbo",
+    "size": "32 GB",
+    "note": "Qwen Research License: non-commercial only.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "diffusion_models/qwen_image_2.1_turbo_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "text_encoders/qwen3vl_8b_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "vae/qwen_image_2.1_vae_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "qwen-image-enhancers",
+    "title": "Qwen-Image 2.1 prompt enhancers",
+    "size": "19 GB",
+    "note": "Optional, for the Expand prompt toggle.",
+    "files": [
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "text_encoders/qwen3.5_9b_qwen_image_2.1_pe_t2i.int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Qwen-Image-2.1",
+        "file": "text_encoders/qwen3.5_9b_qwen_image_2.1_pe_i2i.int8_convrot.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "moss-image",
+    "title": "MOSS-Image SFT + Edit LoRA",
+    "size": "30 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "diffusion_models/moss_image_sft_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "text_encoders/qwen3.5_9b_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "vae/flux2-vae_small.safetensors"
+      },
+      {
+        "folder": "loras",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "loras/moss_image_edit_lora_rank_64_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "moss-image-base",
+    "title": "MOSS-Image Base",
+    "size": "30 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "diffusion_models/moss_image_base_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "text_encoders/qwen3.5_9b_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "vae/flux2-vae_small.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "ideogram4",
+    "title": "Ideogram 4",
+    "size": "49 GB",
+    "note": "Ideogram non-commercial license. Its VAE is FLUX 3's: Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy and log in with `hf auth login`.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Ideogram-4",
+        "file": "diffusion_models/ideogram4_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Ideogram-4",
+        "file": "diffusion_models/ideogram4_unconditional_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Ideogram-4",
+        "file": "text_encoders/qwen3vl_8b_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "vae/flux2-vae.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "text_encoders/qwen3.5_9b_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "ming-image",
+    "title": "Ming Image 0.1 Design",
+    "size": "45 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Ming-Image",
+        "file": "diffusion_models/ming_image_0.1_design_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Ming-Image",
+        "file": "text_encoders/ming_image_0.1_ling_mini_2.0_int8_convrot.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/Ming-Image",
+        "file": "vae/ming_image_vae_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/MOSS-Image",
+        "file": "text_encoders/qwen3.5_9b_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "mage-flow",
+    "title": "Mage-Flow (text-to-image + edit, base + Turbo)",
+    "size": "26 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "diffusion_models/mage_flow_int8_convrot.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "diffusion_models/mage_flow_turbo_int8_convrot.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "diffusion_models/mage_flow_edit_int8_convrot.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "diffusion_models/mage_flow_edit_turbo_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "text_encoders/qwen3vl_4b_bf16.safetensors",
+        "name": "mage_flow_qwen3vl_4b_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "vae/mage_flow_vae_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "krea2-turbo",
+    "title": "Krea 2 Turbo",
+    "size": "19 GB",
+    "note": "Krea 2 Community License.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Krea-2",
+        "file": "diffusion_models/krea2_turbo_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Krea-2",
+        "file": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+        "name": "krea2_qwen3vl_4b_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "FireRedTeam/FireRed-Image-Edit-1.0-ComfyUI",
+        "file": "qwen_image_vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "krea2-raw",
+    "title": "Krea 2 Raw",
+    "size": "19 GB",
+    "note": "Krea 2 Community License.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Krea-2",
+        "file": "diffusion_models/krea2_raw_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Krea-2",
+        "file": "text_encoders/qwen3vl_4b_fp8_scaled.safetensors",
+        "name": "krea2_qwen3vl_4b_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "FireRedTeam/FireRed-Image-Edit-1.0-ComfyUI",
+        "file": "qwen_image_vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "fibo2",
+    "title": "Fibo 2.0 (Dev + Edit Turbo)",
+    "size": "37 GB",
+    "note": "CC BY-NC 4.0: non-commercial only. Its VAE is FLUX 3's: Gated: accept the license at huggingface.co/black-forest-labs/flux-3-image-klein-comfy and log in with `hf auth login`.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Fibo-2.0",
+        "file": "diffusion_models/fibo2_dev_int8_convrot.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Fibo-2.0",
+        "file": "diffusion_models/fibo2_edit_turbo_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Mage-Flow",
+        "file": "text_encoders/qwen3vl_4b_bf16.safetensors",
+        "name": "mage_flow_qwen3vl_4b_bf16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "black-forest-labs/flux-3-image-klein-comfy",
+        "file": "vae/flux2-vae.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Ideogram-4",
+        "file": "text_encoders/qwen3vl_8b_fp8_scaled.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "joyai-edit",
+    "title": "JoyAI Image Edit",
+    "size": "27 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/JoyAI-Image-Edit",
+        "file": "diffusion_models/joyai_image_edit_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/JoyAI-Image-Edit",
+        "file": "text_encoders/qwen3vl_8b_joyimage_edit_int8_convrot.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/JoyAI-Image-Edit",
+        "file": "vae/wan_2.1_vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "boogu",
+    "title": "Boogu Image 0.1 (Turbo, Base, Edit, Edit Turbo)",
+    "size": "53 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Boogu-Image",
+        "file": "diffusion_models/boogu_image_turbo_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Boogu-Image",
+        "file": "diffusion_models/boogu_image_base_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Boogu-Image",
+        "file": "diffusion_models/boogu_image_edit_int8_convrot.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Boogu-Image",
+        "file": "diffusion_models/boogu_image_edit_turbo_hotfix_1k_20260708_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Ideogram-4",
+        "file": "text_encoders/qwen3vl_8b_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "lens",
+    "title": "Lens (base + Turbo)",
+    "size": "30 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Lens",
+        "file": "diffusion_models/lens_bf16.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Lens",
+        "file": "diffusion_models/lens_turbo_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Lens",
+        "file": "text_encoders/gpt_oss_20b_nvfp4.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/Lens",
+        "file": "vae/flux2-vae.safetensors",
+        "name": "lens_flux2-vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "hidream-o1",
+    "title": "HiDream O1 (full + Dev) with refiner",
+    "size": "33 GB",
+    "files": [
+      {
+        "folder": "checkpoints",
+        "repo": "Comfy-Org/HiDream-O1-Image",
+        "file": "checkpoints/hidream_o1_image_bf16.safetensors"
+      },
+      {
+        "folder": "checkpoints",
+        "repo": "Comfy-Org/HiDream-O1-Image",
+        "file": "checkpoints/hidream_o1_image_dev_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/gemma-4",
+        "file": "text_encoders/gemma4_e4b_it_fp8_scaled.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "ernie-image",
+    "title": "ERNIE-Image (base + Turbo)",
+    "size": "47 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/ERNIE-Image",
+        "file": "diffusion_models/ernie-image.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/ERNIE-Image",
+        "file": "diffusion_models/ernie-image-turbo.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/ERNIE-Image",
+        "file": "text_encoders/ministral-3-3b.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/ERNIE-Image",
+        "file": "text_encoders/ernie-image-prompt-enhancer.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/Lens",
+        "file": "vae/flux2-vae.safetensors",
+        "name": "lens_flux2-vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "longcat-image",
+    "title": "LongCat-Image (T2I, Edit, Edit Turbo)",
+    "size": "47 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/LongCat-Image",
+        "file": "split_files/diffusion_models/longcat_image_bf16.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/LongCat-Image",
+        "file": "split_files/diffusion_models/longcat_image_edit_bf16.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/LongCat-Image",
+        "file": "split_files/diffusion_models/longcat_image_edit_turbo_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/HunyuanVideo_1.5_repackaged",
+        "file": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "chronoedit",
+    "title": "ChronoEdit 14B + distill LoRA",
+    "size": "41 GB",
+    "note": "NVIDIA Open Model License. Edit only.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+        "file": "split_files/diffusion_models/chrono_edit_14B_fp16.safetensors"
+      },
+      {
+        "folder": "loras",
+        "repo": "Comfy-Org/Wan_2.2_ComfyUI_Repackaged",
+        "file": "split_files/loras/chronoedit_distill_lora.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+        "file": "split_files/text_encoders/umt5_xxl_fp8_e4m3fn_scaled.safetensors"
+      },
+      {
+        "folder": "clip_vision",
+        "repo": "Comfy-Org/Wan_2.1_ComfyUI_repackaged",
+        "file": "split_files/clip_vision/clip_vision_h.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/JoyAI-Image-Edit",
+        "file": "vae/wan_2.1_vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "omnigen2",
+    "title": "OmniGen2",
+    "size": "16 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Omnigen2_ComfyUI_repackaged",
+        "file": "split_files/diffusion_models/omnigen2_fp16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Omnigen2_ComfyUI_repackaged",
+        "file": "split_files/text_encoders/qwen_2.5_vl_fp16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "chroma",
+    "title": "Chroma1-HD + Radiance",
+    "size": "38 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Chroma1-HD_repackaged",
+        "file": "split_files/diffusion_models/Chroma1-HD-fp8mixed.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Chroma1-Radiance_Repackaged",
+        "file": "split_files/diffusion_models/chroma-radiance-x0.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "text_encoders/t5xxl_fp16.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "ovis-image",
+    "title": "Ovis-Image 7B",
+    "size": "20 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/Ovis-Image",
+        "file": "split_files/diffusion_models/ovis_image_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Ovis-Image",
+        "file": "split_files/text_encoders/ovis_2.5.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "anima",
+    "title": "Anima (Base, Aesthetic, Turbo)",
+    "size": "14 GB",
+    "note": "Non-commercial model license; outputs may be used commercially.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "circlestone-labs/Anima",
+        "file": "split_files/diffusion_models/anima-base-v1.0.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "circlestone-labs/Anima",
+        "file": "split_files/diffusion_models/anima-aesthetic-v1.1.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "circlestone-labs/Anima",
+        "file": "split_files/diffusion_models/anima-turbo-v1.1.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "circlestone-labs/Anima",
+        "file": "split_files/text_encoders/qwen_3_06b_base.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "FireRedTeam/FireRed-Image-Edit-1.0-ComfyUI",
+        "file": "qwen_image_vae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "kandinsky5",
+    "title": "Kandinsky 5.0 Image Lite (SFT + pretrain)",
+    "size": "34 GB",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "kandinskylab/Kandinsky-5.0-T2I-Lite",
+        "file": "model/kandinsky5lite_t2i.safetensors"
+      },
+      {
+        "folder": "diffusion_models",
+        "repo": "kandinskylab/Kandinsky-5.0-T2I-Lite-pretrain",
+        "file": "model/kandinsky5lite_t2i_pretrain.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/HunyuanVideo_1.5_repackaged",
+        "file": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/stable-diffusion-3.5",
+        "file": "text_encoders/clip_l.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/z_image_turbo",
+        "file": "split_files/vae/ae.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "pixeldit",
+    "title": "PixelDiT 1.3B",
+    "size": "8 GB",
+    "note": "NSCL v1: non-commercial only.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/PixelDiT",
+        "file": "diffusion_models/pixeldit_1300m_1024px_bf16.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/PixelDiT",
+        "file": "text_encoders/gemma_2_2b_it_elm_bf16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "minimax-h3",
+    "title": "MiniMax-H3-Image",
+    "size": "57 GB",
+    "note": "License excludes the EU, UK, South Korea and the US, including using or displaying outputs there. Untested in Darkroom.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "Comfy-Org/MiniMax-H3-Image",
+        "file": "diffusion_models/minimax_h3_image_pruned_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/MiniMax-H3",
+        "file": "text_encoders/qwen3vl_32b_minimax_h3_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/Qwen3.5",
+        "file": "text_encoders/qwen3.5_9b_w4a8_gptq.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "Comfy-Org/MiniMax-H3-Image",
+        "file": "vae/minimax_h3_image_vae_fp16.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "p-image-oss",
+    "title": "P-Image-OSS",
+    "size": "36 GB",
+    "note": "Same territorial license as MiniMax-H3-Image. Untested in Darkroom.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "PrunaAI/P-Image-OSS-Comfy",
+        "file": "diffusion_models/p-h3-image_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "PrunaAI/P-Image-OSS-Comfy",
+        "file": "text_encoders/p-h3-image_text_encoder_int8_convrot.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "PrunaAI/P-Image-OSS-Comfy",
+        "file": "text_encoders/p-h3-image_prompt_upsampler_w4a8.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "PrunaAI/P-Image-OSS-Comfy",
+        "file": "vae/p-h3-image_vae_int8_convrot.safetensors"
+      }
+    ]
+  },
+  {
+    "id": "firered-edit",
+    "title": "FireRed Image Edit 1.1 + Lightning LoRA",
+    "size": "51 GB",
+    "note": "Edit only.",
+    "files": [
+      {
+        "folder": "diffusion_models",
+        "repo": "FireRedTeam/FireRed-Image-Edit-1.1-ComfyUI",
+        "file": "FireRed-Image-Edit-1.1-transformer.safetensors"
+      },
+      {
+        "folder": "loras",
+        "repo": "FireRedTeam/FireRed-Image-Edit-1.0-ComfyUI",
+        "file": "FireRed-Image-Edit-1.0-Lightning-8steps-v1.0.safetensors"
+      },
+      {
+        "folder": "vae",
+        "repo": "FireRedTeam/FireRed-Image-Edit-1.0-ComfyUI",
+        "file": "qwen_image_vae.safetensors"
+      },
+      {
+        "folder": "text_encoders",
+        "repo": "Comfy-Org/HunyuanVideo_1.5_repackaged",
+        "file": "split_files/text_encoders/qwen_2.5_vl_7b_fp8_scaled.safetensors"
+      }
+    ]
+  }
+]

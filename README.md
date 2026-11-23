@@ -16,8 +16,16 @@ image generation studio: a dark Gradio UI on top of a [ComfyUI](https://github.c
 2. **Start** launches ComfyUI on a free port, then Darkroom pointed at it, and opens Darkroom.
    **Start Darkroom only** skips the bundled ComfyUI and uses `COMFYUI_URL` (default `http://127.0.0.1:8188`) or the
    URL you enter in Darkroom's **Connection** tab, e.g. a ComfyUI on Modal.
-3. Put models in `comfyui/models/...` (see the Darkroom README for which files each model needs), then click
-   **Connect / refresh models** in Darkroom.
+3. **Download Models** lists every model Darkroom supports with its download size. Picking one downloads the model and
+   the text encoders and VAE it needs into `comfyui/models/`; files you already have are skipped, and downloaded
+   models get a check mark. Downloading works while Darkroom runs: afterwards click **Connect / refresh models**.
+
+   FLUX 3 Klein, SD 3.5 Large Turbo, and Ideogram 4 and Fibo 2.0 (which use FLUX 3's VAE) come from gated repos:
+   accept the license on Hugging Face, then run `hf auth login` in a Pinokio terminal (or set `HF_TOKEN`) first.
+   Some models are non-commercial or region-restricted; the menu shows the license note.
+
+   The list lives in `models.json` (ComfyUI folder, Hugging Face repo, file, optional local name);
+   `download.py` fetches it with `huggingface_hub`.
 
 While running, the menu also links to the ComfyUI web UI. Images are saved to `~/Pictures/Darkroom`.
 
