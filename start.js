@@ -13,7 +13,7 @@ module.exports = {
         },
         path: "comfyui",
         message: [
-          "python main.py --listen 127.0.0.1 --port {{port}} --preview-method latent2rgb {{gpu === 'nvidia' || gpu === 'amd' || platform === 'darwin' ? '' : '--cpu'}}"
+          "python main.py --listen 127.0.0.1 --port {{port}} --preview-method latent2rgb {{(gpu === 'nvidia' && platform !== 'darwin') || (gpu === 'amd' && platform === 'linux') || platform === 'darwin' ? '' : '--cpu'}}"
         ],
         on: [{
           // "To see the GUI go to: http://127.0.0.1:8189"
@@ -23,10 +23,10 @@ module.exports = {
       }
     },
     {
-      when: "{{!args || args.backend !== 'external'}}",
+      // Cleared in external mode so a URL from an earlier local run is neither used nor linked in the menu.
       method: "local.set",
       params: {
-        comfy_url: "{{input.event[1]}}"
+        comfy_url: "{{args && args.backend === 'external' ? '' : input.event[1]}}"
       }
     },
     {
@@ -34,7 +34,7 @@ module.exports = {
       params: {
         path: "app",
         env: {
-          COMFYUI_URL: "{{local.comfy_url ? local.comfy_url : (envs.COMFYUI_URL || 'http://127.0.0.1:8188')}}",
+          COMFYUI_URL: "{{local.comfy_url || envs.COMFYUI_URL || 'http://127.0.0.1:8188'}}",
           DARKROOM_PORT: "{{port}}"
         },
         message: [
